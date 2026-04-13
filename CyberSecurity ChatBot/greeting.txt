@@ -1,0 +1,27 @@
+VOICE GREETING INSTRUCTIONS
+============================
+
+To create the greeting.wav file for the voice greeting feature:
+
+1. Record a short voice message (approximately 5-10 seconds) with the following text:
+   "Hello! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online."
+
+2. Save the recording in WAV format (.wav) - this is required for System.Media.SoundPlayer compatibility.
+
+3. Name the file "greeting.wav" and place it in the same directory as the executable:
+   - For development: Place in the project folder (next to Program.cs)
+   - For running: Place in the bin/Debug/net8.0/ folder
+
+4. Recommended recording tools:
+   - Windows Voice Recorder (built-in)
+   - Audacity (free, open-source)
+   - Online voice recorders
+
+5. Audio specifications:
+   - Format: WAV
+   - Sample rate: 44.1kHz or 48kHz
+   - Bit depth: 16-bit
+   - Channels: Mono or Stereo
+
+If you don't have a greeting.wav file, the application will display a warning message
+and continue in silent mode without crashing.
