@@ -80,7 +80,7 @@ CyberSecurity ChatBot/
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/NeverLetGoOfMe/Cybersecurity-Chatbot/tree/master
 cd CyberSecurity ChatBot
 ```
 
@@ -164,7 +164,7 @@ The chatbot uses string manipulation techniques:
 
 This project uses GitHub Actions for continuous integration:
 
-![CI Workflow Status](https://github.com/<your-username>/<your-repo>/actions/workflows/ci.yml/badge.svg)
+![CI Workflow Status](https://github.com/NeverLetGoOfMe/Cybersecurity-Chatbot/tree/master/workflows/badge.svg)
 
 ### CI Workflow Features
 - Builds the project on Windows
@@ -201,7 +201,7 @@ This project is developed for educational purposes as part of the Cybersecurity 
 
 ## Author
 
-Developed for the South African Department of Cybersecurity Awareness Campaign.
+Developed by lulama Tumelo Nyaqela for the South African Department of Cybersecurity Awareness Campaign.
 
 ## Acknowledgments
 
