@@ -1,8 +1,7 @@
 namespace CyberBot
 {
     /// <summary>
-    /// Represents a user session with automatic properties (Requirement: Use automatic properties).
-    /// Reference: C# Automatic Properties Documentation
+    /// Represents a user session with automatic properties for tracking user data.
     /// </summary>
     public class UserSession
     {

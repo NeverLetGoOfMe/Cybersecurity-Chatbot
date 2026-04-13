@@ -3,12 +3,11 @@ using System.Media;
 namespace CyberBot
 {
     /// <summary>
-    /// Provides console UI helpers: colours, borders, typing effect, ASCII art.
-    /// Reference: Microsoft Console Class Documentation
+    /// Provides console UI helpers including colors, borders, typing effect, and ASCII art display.
     /// </summary>
     public static class ConsoleHelper
     {
-        /// <summary>Displays the cybersecurity ASCII art logo (Requirement 2).</summary>
+        /// <summary>Displays the cybersecurity-themed ASCII art logo as a visual header.</summary>
         public static void ShowAsciiArt()
         {
             string art = @"
@@ -23,7 +22,7 @@ namespace CyberBot
             Console.WriteLine(new string('═', 60));
         }
 
-        /// <summary>Simulates a typing effect for conversational feel (Requirement 6).</summary>
+        /// <summary>Simulates a typing effect to create a more conversational feel.</summary>
         /// <param name="message">Text to display.</param>
         /// <param name="delayMs">Milliseconds between characters (default 30).</param>
         public static void TypeLine(string message, int delayMs = 30)
@@ -36,7 +35,7 @@ namespace CyberBot
             Console.WriteLine();
         }
 
-        /// <summary>Plays the voice greeting from greeting.wav (Requirement 1).</summary>
+        /// <summary>Plays the voice greeting from the greeting.wav audio file.</summary>
         public static void PlayVoiceGreeting()
         {
             string wavPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "greeting.wav");
@@ -61,7 +60,7 @@ namespace CyberBot
             }
         }
 
-        /// <summary>Displays a section divider with visual elements (Requirement 6).</summary>
+        /// <summary>Displays a visual section divider to separate content sections.</summary>
         public static void ShowDivider()
         {
             Console.WriteLine(new string('─', 60));

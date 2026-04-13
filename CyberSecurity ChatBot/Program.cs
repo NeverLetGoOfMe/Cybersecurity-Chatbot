@@ -20,21 +20,21 @@ namespace CyberBot
             // Initialize user session with automatic properties
             UserSession session = new UserSession();
 
-            // 1. Voice greeting (Requirement 1)
+            // Play voice greeting when the app starts
             ConsoleHelper.PlayVoiceGreeting();
 
-            // 2. Display ASCII art logo (Requirement 2)
+            // Display the ASCII art logo
             ConsoleHelper.ShowAsciiArt();
 
-            // 3. Ask for user name with validation (Requirement 3 & 5)
+            // Ask for the user's name and validate the input
             session.UserName = GetUserName();
             session.IsGreeted = true;
 
-            // 4. Personalized welcome with typing effect (Requirement 3 & 6)
+            // Welcome the user with a personalized message and typing effect
             ConsoleHelper.TypeLine($"\nHello {session.UserName}! I'm your Cybersecurity Awareness Bot.", 40);
             ConsoleHelper.TypeLine("Ask me about passwords, phishing, or safe browsing. Type 'exit' to quit.\n", 40);
 
-            // 5. Main interaction loop (Requirement 4)
+            // Main chatbot interaction loop
             Chatbot bot = new Chatbot();
             while (true)
             {
@@ -63,7 +63,7 @@ namespace CyberBot
             }
         }
 
-        /// <summary>Asks for user name and validates input (Requirement 5).</summary>
+        /// <summary>Asks for the user's name and validates the input.</summary>
         static string GetUserName()
         {
             ConsoleHelper.TypeLine("Hello! What's your name?", 40);

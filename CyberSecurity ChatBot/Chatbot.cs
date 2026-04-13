@@ -9,12 +9,12 @@ namespace CyberBot
     /// </summary>
     public class Chatbot
     {
-        /// <summary>Returns a reply based on the user's input (Requirement 4).</summary>
+        /// <summary>Returns a reply based on the user's input.</summary>
         /// <param name="input">User's message.</param>
         /// <returns>Chatbot's response.</returns>
         public string GetResponse(string input)
         {
-            // Input validation (Requirement 5)
+            // Validate the user input
             if (string.IsNullOrWhiteSpace(input))
                 return "I didn't hear anything. Please type a message.";
 
@@ -28,7 +28,7 @@ namespace CyberBot
             if (lower.Contains("help"))
                 return GetHelpMessage();
 
-            // Cybersecurity topics (Requirement 4)
+            // Handle cybersecurity-related queries
             // Reference: South African Cybersecurity Awareness Campaign Guidelines
             if (lower.Contains("password"))
                 return GetPasswordAdvice();
@@ -43,7 +43,7 @@ namespace CyberBot
             if (lower.Contains("two factor") || lower.Contains("2fa"))
                 return GetTwoFactorAdvice();
 
-            // Fallback for unrecognised input (Requirement 5)
+            // Provide a helpful fallback for unrecognized input
             return "I didn't quite understand that. Could you rephrase? Try asking about passwords, phishing, or safe browsing.";
         }
 
